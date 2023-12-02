@@ -1,0 +1,3 @@
+alias open='xdg-open'
+
+open-all() ( shopt -s nullglob; ls -b $1*.{png,pdf,jpg} | xargs -n 1 xdg-open; )
